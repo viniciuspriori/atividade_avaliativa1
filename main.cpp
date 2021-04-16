@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    string palavra = "maracatu"; //digite palavra
+    string palavra; 
     int np; //numero a ser pressionado
     int nv; //numero de vezes a ser pressionado
     int c; //coluna da matriz alfa
@@ -11,7 +11,7 @@ int main() {
     char alfa[3][8] = {{'a','d','g','j','m','p','t','w'}, {'b','e','h', 'k','n','q','u','x'}, {'c','f','i','l','o','r','v','y'}};
 
     //matriz feita de modo a cada sequencia de 3 caracteres ser uma coluna
-    cout << "MATRIZ DO ALFABETO" << endl;
+    cout << "MATRIZ DO ALFABETO (exceto S e Z)" << endl;
       for(int l=0; l<=2; l++){
         for(int c=0; c<=7; c++){
           if(c==7)
@@ -27,6 +27,8 @@ int main() {
     
 cout << endl;
 
+  cout << "digite uma palavra" << endl;
+  cin >> palavra;
 
  for(int i=0; i<size(palavra); i++)
     {
