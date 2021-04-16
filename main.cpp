@@ -26,7 +26,7 @@ int main() {
        }
     
   cout << endl;
-  cout << "digite uma palavra" << endl;
+  cout << "digite uma palavra" << endl; //entrada 
   cin >> palavra;
 
  for(int i=0; i<size(palavra); i++)
