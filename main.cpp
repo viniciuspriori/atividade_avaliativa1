@@ -12,6 +12,7 @@ int main() {
 
     //matriz feita de modo a cada sequencia de 3 caracteres ser uma coluna
     cout << "MATRIZ DO ALFABETO (exceto S e Z)" << endl;
+    
       for(int l=0; l<=2; l++){
         for(int c=0; c<=7; c++){
           if(c==7)
@@ -46,19 +47,20 @@ int main() {
 
         cout << "#" << np << "=" << nv << endl;
         }
+
         //percorrer a matriz para achar a letra
+        for(int c=0; c<=7; c++){
+          for(int l=0; l<=2; l++){
 
-      for(int c=0; c<=7; c++){
-        for(int l=0; l<=2; l++){
-
-          if(palavra[i] == alfa[l][c]){
-            //transformar matriz - ex. LETRA A: posição 0,0 = 2,1 (apertar nº2 1x)
-            np = c+2; //somar 2 na coluna 
-            nv = l+1; // somar 1 na linha
-            cout << "#" << np << "=" << nv << endl;
-          } 
-        }
-      }
+            if(palavra[i] == alfa[l][c])
+              {
+              //transformar matriz - ex. LETRA A: posição 0,0 = 2,1 (apertar nº2 1x)
+              np = c+2; //somar 2 na coluna 
+              nv = l+1; // somar 1 na linha
+              cout << "#" << np << "=" << nv << endl;
+              } 
+            }
+          }
      }
  return 0;
 }
