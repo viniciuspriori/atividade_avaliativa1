@@ -31,8 +31,8 @@ int main() {
   cin >> palavra;
   
    do{
-      for(int i=0; i<size(palavra); i++)
-        {
+      for(int i=0; i<size(palavra); i++){
+
           if(size(palavra)>50)
           {
             i--;
@@ -69,10 +69,10 @@ int main() {
                   nv = l+1; // somar 1 na linha
                   cout << "#" << np << "=" << nv << endl;
                   } 
+                 }
                 }
-              }
-         }
-      }
-    } while(size(palavra)>50);
+            }
+       }
+     } while(size(palavra)>50);
   return 0;
 }
