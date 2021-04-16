@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    string palavra = "abcdefghijklmnopqrstuvwxyszszsz";
+    string palavra = "abcdefghijklmnopqrstuvwxyz";
     int np;
     int nv;
     int c;
@@ -12,16 +12,18 @@ int main() {
     
  for(int i=0; i<size(palavra); i++)
     {
-        if(palavra[i]=='s'){
-          np=7;
-          nv=4; 
-          cout << "#" << np << "=" << nv << endl;
-          }
-          if(palavra[i]=='z'){
-          np=9;
-          nv=4; 
-          cout << "#" << np << "=" << nv << endl;
-          }
+      if(palavra[i]=='s')
+        {
+        np=7;
+        nv=4; 
+        cout << "#" << np << "=" << nv << endl;
+        }
+        if(palavra[i]=='z')
+        {
+        np=9;
+        nv=4; 
+        cout << "#" << np << "=" << nv << endl;
+        }
       for(int c=0; c<=7; c++){
         for(int l=0; l<=3; l++){
           if(palavra[i] == alfa[l][c]){
